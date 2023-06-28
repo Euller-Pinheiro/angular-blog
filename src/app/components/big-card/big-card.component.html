@@ -1,20 +1,18 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://www.louveira.sp.gov.br/sitenovo/painel/dbanexos/dbanexo_imagem/04-2020/a66f8aeb89a9d114fe7b5b5cca2ce6b2.jpg"
+    <img src="{{ photoCover }}"
     height="250px"
     srcset="">
   </div>
   <a></a>
   <div class="big-card__title">
-    <h1><a href="#">Tudo sobre os Vingadores</a></h1>
+    <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien libero, luctus ac tincidunt quis, tristique a dolor.
-      Sed sit amet lacus vitae dolor egestas tincidunt. Suspendisse ullamcorper sapien nec suscipit convallis.
-      Sed in imperdiet purus. Morbi vehicula quam id lacus ultricies, eget mattis ante ornare.
-    </a>
+      <a [routerLink]="['content', Id]">
+          {{ cardDescription }}
+      </a>
     </p>
   </div>
 </div>
